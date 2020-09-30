@@ -1,44 +1,19 @@
-
 $(document).ready(function() {
+    $('#bloe').on('click', citypic);
 
-    $('#bloe').on('click', citypic)
-
-    function citypic(){
-      
-    
+    function citypic() {
         $('.bloe').show();
-        
-      }
+    }
 
-      $('#cape').on('click', citypic1)
+    $('#cape').on('click', citypic1);
 
-      function citypic1(){
-        
-      
-          $('.cape').show();
-          
-        }
+    function citypic1() {
+        $('.cape').show();
+    }
 
+    $('#pre').on('click', citypic2);
 
-
-        $('#pre').on('click', citypic2)
-
-        function citypic2(){
-          
-        
-            $('.pre').show();
-            
-          }
-
-
-    // $('#city').click(function(){
-    //     $('p').show();
-    //     // $('p').css('display', 'inline-block')
-        
-    // });
-
-
-
-
-
+    function citypic2() {
+        $('.pre').show();
+    }
 });
