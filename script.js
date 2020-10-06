@@ -16,4 +16,8 @@ $(document).ready(function() {
     function citypic2() {
         $('.pre').show();
     }
+
+    $(function() {
+        $('#nav').load('nav.html');
+    });
 });

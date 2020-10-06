@@ -9,18 +9,16 @@ html {
 }
 
 body {
-    background-image: url('https://s3.amazonaws.com/images.wpr.com/flag-pages/png1000/za.png');
-    background-repeat: no-repeat;
-    background-position: center;
+    background: url('https://s3.amazonaws.com/images.wpr.com/flag-pages/png1000/za.png') center no-repeat;
     background-size: cover;
     min-height: 100vh;
+    font-size: 25px;
+    line-height: 1.3em;
+    margin: 0;
 }
 
-.top {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
+
+/* Home page */
 
 h1,
 h2 {
@@ -30,7 +28,6 @@ h2 {
 }
 
 p {
-    font-size: 25px;
     text-align: center;
     color: blue;
 }
@@ -49,37 +46,77 @@ h3 {
     color: white;
 }
 
-div>h2 {
+
+/* nav bar */
+
+#nav {
+    display: contents;
+}
+
+#nav ul {
+    list-style: none;
+}
+
+#nav li {
+    display: inline;
+    font-size: 20px;
+    border: 1px solid gold;
+    padding: 10px 10px;
+}
+
+#nav a {
+    text-decoration: none;
+}
+
+.links {
+    padding-right: 25px;
+}
+
+
+/* photo page */
+
+h2 {
+    padding: 5%;
+}
+
+div {
     margin-top: 50px;
-    font-size: 25px;
     color: blue;
 }
 
 img {
     width: 250px;
-    object-fit: scale-down;
+    /* object-fit: scale-down; */
+}
+
+.pic {
+    padding-top: 28px;
 }
 
 #city {
     display: flex;
     justify-content: space-evenly;
+    padding: 20px;
 }
 
 #city p {
     cursor: pointer;
 }
 
-.nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+.bloe,
+.cape,
+.pre {
+    display: none;
 }
 
-.links {
+.pic {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-around;
+    align-items: center;
 }
+
+
+/* facts page */
 
 .vfact {
     display: flex;
@@ -87,23 +124,9 @@ img {
     justify-content: space-evenly;
 }
 
-li {
-    font-size: 20px;
-    border: 1px solid gold;
-    padding: 10px 10px;
-    list-style: none;
-}
-
 .infor~p {
     color: red;
-    font-size: 25px;
     text-shadow: 3px 4px 5px rgba(0, 0, 0, 0.5);
-}
-
-.bloe,
-.cape,
-.pre {
-    display: none;
 }
 
 @media (max-width: 780px) {
